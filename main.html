@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> PORTFOLIO </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(4, 4, 40);
+            color: rgb(208, 194, 194);
+            font-family: Arial, 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            /*justify center to center the elements of nav bar --> */
+            align-items: center;
+            height: 45px;
+            background-color: rgb(44, 4, 105);
+        }
+
+        nav ul {
+
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav ul li {
+            list-style-type: none;
+            margin: 0, 23px;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: antiquewhite;
+
+        }
+
+        nav ul li a:hover {
+            color: pink;
+            font-size: large;
+
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 45px 0;
+        }
+
+        .firstsection>div {
+            /* we use > div so that this css only applies to the first div */
+            width: 30%;
+        }
+
+        .leftsection {
+            font-size: 2.75rem;
+        }
+
+        .rightsection img {
+            margin-top: 10px;
+            width: 130%;
+
+        }
+
+        .purple {
+            color: rgb(133, 65, 216);
+        }
+
+        #element {
+            color: rgb(133, 65, 216);
+        }
+        .secondsection{
+            max-width: 80vw;
+            margin : auto;
+        }
+        main hr{
+            border: 0;
+            background: rgb(18, 18, 155);
+            height: 1px;
+            margin: 10px 84px;
+        } 
+       
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">Hello, My name is <span class="purple">Devanshi Pokhriyal</span>
+
+                <div>and I am a passionate</div> <!-- Element to contain animated typing -->
+                <span id="element"></span>
+            </div>
+            </div>
+            <div class="rightsection"><img src="C:\Users\devan\OneDrive\Desktop\portfolio\pic1.png"></div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            
+            <h1>Past Experiance</h1>
+        
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Video Editor.', 'Graphic Designer.', 'Web Developer.'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
