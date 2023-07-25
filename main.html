@@ -28,13 +28,13 @@
         }
 
         nav ul {
-
+            gap: 15px;
             display: flex;
-            justify-content: space-around;
+
         }
 
         nav ul li {
-            list-style-type: none;
+            list-style: none;
             margin: 0, 23px;
 
         }
@@ -69,6 +69,22 @@
 
         .leftsection {
             font-size: 2.75rem;
+            margin: center;
+        }
+        .leftsection .buttons {
+        padding: 18px 12px;
+        }
+        .leftsection .btn{
+            padding :12px;
+            background-color:rgb(44, 4, 105);
+            color:antiquewhite;
+            border: 2px solid antiquewhite;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor:pointer;
+        }
+        .leftsection .btn:hover{
+            font-size: large;
         }
 
         .rightsection img {
@@ -84,24 +100,89 @@
         #element {
             color: rgb(133, 65, 216);
         }
-        .secondsection{
+
+        .secondsection {
             max-width: 80vw;
-            margin : auto;
+            margin: auto;
+            height: 80vh;
         }
-        main hr{
+
+        main hr {
             border: 0;
             background: rgb(18, 18, 155);
-            height: 1px;
-            margin: 10px 84px;
-        } 
-       
+            height: 2px;
+            margin: 25px 84px;
+        }
+
+        .text-grey {
+            color: grey;
+        }
+
+        .secondsection .box {
+            display: flex;
+            background: whitesmoke;
+            width: 85vw;
+            height: 2px;
+            margin: 56px 0;
+
+        }
+
+        .secondsection .vertical {
+            margin: 2px 163px;
+            height: 83px;
+            width: .5px;
+            background-color: antiquewhite;
+        }
+
+        .image-top {
+
+            width: 24px;
+    position: relative;
+    top: -27px;
+    left: -12px;
+
+
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 62px;
+            width: 150px;
+            right: 10px;
+            font-size: small;
+        }
+
+        .vertical-desc {
+            font-size: smaller;
+            position: relative;
+        }
+        footer{
+            background-color: rgb(44, 4, 105);
+
+        }
+        .footer{
+            display: flex;
+            padding:23px 122px; 
+            justify-content: space-evenly;
+        }
+        .footer ul{
+            list-style-type: none;
+        }
+        .footer > div{
+            width: 233px;
+        }
+        footer .footer-rights{
+            color: grey;
+            text-align: center;
+            padding:20px 0px;
+        }
     </style>
 </head>
 
 <body>
     <header>
         <nav>
-            <div class="left">Portfolio</div>
+            <div class="left">My Portfolio</div>
             <div class="right">
                 <ul>
                     <li><a href="/">Home</a></li>
@@ -119,17 +200,100 @@
 
                 <div>and I am a passionate</div> <!-- Element to contain animated typing -->
                 <span id="element"></span>
+
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit Github</button>
+                </div>
             </div>
             </div>
             <div class="rightsection"><img src="C:\Users\devan\OneDrive\Desktop\portfolio\pic1.png"></div>
         </section>
         <hr>
         <section class="secondsection">
-            
-            <h1>Past Experiance</h1>
-        
+            <span class="text-grey">What I have done so far</span>
+            <h1>Work Experiance</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="html.png">
+                    <div class="vertical-title">
+                        HTML Developer<div> (2010-2012)</div>
+
+                        <div class="vertical-desc">
+                            123
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="fb.png">
+                    <div class="vertical-title">
+                        Facebook <div>(2013-2015)</div>
+
+                        <div class="vertical-desc">
+                            XYZ
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="insta.png">
+                    <div class="vertical-title">
+                        Python <div>(2015-2019)</div>
+
+                        <div class="vertical-desc">
+                            ABC
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="threads.png">
+                    <div class="vertical-title">
+                        AI <div>(2019-current)</div>
+
+                        <div class="vertical-desc">
+                            aaa
+                        </div>
+                    </div>
+                </div>
+
+
+
+
         </section>
     </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Devanshi's Developer portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Services</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Services</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Services</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copyright &copy devanshisportfolio.com | All rights reserved
+        </div>
+    </footer>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
